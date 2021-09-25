@@ -1,0 +1,48 @@
+import java.util.Scanner;
+public class Ejercicio3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int [] arreglo = generarArreglo(100);
+		imprimir(arreglo);
+		//medir el tiempo de ejecución del algoritmo
+		long TInicio, TFin, tiempo;
+		TInicio = System.nanoTime();
+		System.out.println(buscar(arreglo,15));		
+		TFin = System.nanoTime();
+		tiempo = TFin - TInicio;
+		System.out.println("Tiempo de ejecución en nanosegundos: " + tiempo);
+    //Conversión de nanosegundos a segundos
+		System.out.println("Tiempo de ejecución en segundos: " + tiempo*(Math.pow(10, -9)));	
+	}
+	
+	public static int buscar(int arreglo[],int n) {
+		for (int i=0;i<arreglo.length;i++) {
+			if (arreglo[i]==n) 
+				return i;			
+		}
+		return -1;
+	}
+	public static int [] generarArreglo(int n) {
+		int arreglo[] = new int [n];
+		for (int i=0;i<arreglo.length;i++) {
+			arreglo[i] = n;
+			n--;
+		}
+		return arreglo;
+	}
+	public static void imprimir(int arreglo[]) {
+		for (int i=0;i<arreglo.length;i++) {
+			System.out.print(arreglo[i]+ " ");
+		}
+		System.out.println();
+	}	
+}
+
+//Resultado de la ejecución
+100 99 98 97 96 95 94 93 92 91 90 89 88 87 86 85 84 83 82 81 80 79 78 77 76 75 74 73 72 71 70 69 68 67 66 65 64 63 62 61 60 59 58 57 56 55 54 53 52 51 50 49 48 47 46 45 44 43 42 41 40 39 38 37 36 35 34 33 32 31 30 29 28 27 26 25 24 23 22 21 20 19 18 17 16 15 14 13 12 11 10 9 8 7 6 5 4 3 2 1 
+//El número 15 a buscar se encuentra en la posición 85  
+85
+//Tiempo de ejecución
+Tiempo de ejecución en nanosegundos: 21800
+Tiempo de ejecución en segundos: 2.18E-5
