@@ -1,3 +1,5 @@
+//greatestNumber.java
+
 import java.util.*;
 public class greatestNumber {
 
@@ -24,6 +26,8 @@ public class greatestNumber {
 	}
 	//código O(n)
 	public static int greaterNumber(int [] array) {
+	//se modificó la función anterior para obtener una complejidad de O(n)
+	//dado un arreglo de números enteros la función devolverá el mayor de ellos		
     	int mayor= array[0];
         for(int i=0;i<array.length;i++){
         	if (array[i] > mayor)
