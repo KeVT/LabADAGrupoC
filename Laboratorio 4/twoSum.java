@@ -14,7 +14,7 @@ public class twoSum {
 	public static boolean twoSum(int [] array) {                     //---- O(n^2) 
     //dado un arreglo de números enteros, la función buscará los dos  
     //primeros números con posiciones diferentes que sumen 10.
-    for(int i=0; i<array.length; i++){   		                                                        //---- O(n)        	
+    for(int i=0; i<array.length; i++){   		                                                                    //---- O(n)        	
       for (int j=0; j<array.length; j++) {                                                           //---- O(n)       
         if (i != j && array[i] + array[j] == 10) {                                        //---- O(4)        	
           System.out.println(array[i] + " + " + array[j] + " = " + (array[i]+array[j]));     	
