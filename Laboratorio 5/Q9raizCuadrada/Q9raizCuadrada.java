@@ -11,3 +11,10 @@ public class Q9raizCuadrada {
 	}
 	
 }
+
+//Resolución
+0
+1
+4
+9
+16
