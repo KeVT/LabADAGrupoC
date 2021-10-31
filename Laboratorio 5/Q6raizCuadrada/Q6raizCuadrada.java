@@ -14,3 +14,10 @@ public class Q6raizCuadrada {
 	}
 	
 }
+
+//Resolución
+1
+3
+6
+10
+15
