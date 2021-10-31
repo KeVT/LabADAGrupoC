@@ -22,3 +22,12 @@ public class Q11logaritmicaCuadrada {
 	}
 	
 }
+
+//Resolución
+1
+2
+4
+8
+
+1
+2
