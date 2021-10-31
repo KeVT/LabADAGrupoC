@@ -20,3 +20,4 @@ public class Q1lineal {
 2
 3
 4
+	
