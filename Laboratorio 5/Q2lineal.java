@@ -3,7 +3,7 @@
 public class Q2lineal {
 
 	public static void main(String[] args) {	
-		//Dado un número, se imprimen números consecutivos descendientemente desde ese número hasta el 1.
+		//Dado un número, se imprimen números consecutivos descendientemente desde ese número hasta el 1
 		int n = 10;
 		
 		for(int i = n; i > 0; i--) {	//O(n)    	
