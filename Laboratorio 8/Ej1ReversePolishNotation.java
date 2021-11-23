@@ -11,7 +11,7 @@ public class Ej1ReversePolishNotation {
 	}
 	
 	public static int evaluar(String[] tokens) {
-		    //Dado un arreglo de strings, realizar las operaciones básicas de acuerdo a la notación polaca inversa utilizando colas.
+		    //Dado un arreglo de strings, realizar las operaciones básicas de acuerdo a la notación polaca inversa utilizando pilas.
         int returnValue = 0;
  
         String operators = "+-*/";
