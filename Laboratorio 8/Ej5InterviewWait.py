@@ -2,7 +2,7 @@
 
 ##En una cola doblemente enlazada, dado un índice se compara el primer y último elemento de la cola
 ##y el menor valor se va acumulando, sumando y borrando hasta que el primer o último valor sea igual al 
-##índice inicial. Finalmente imprime la suma acumulada.
+##índice inicial. Finalmente imprime la suma acumulada. Utilizando colas doblemente enlazadas.
 
 from collections import deque
 
