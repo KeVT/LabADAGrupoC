@@ -11,7 +11,7 @@ public class Ej2MinimumAddtoMakeParenthesesValid {
 	 
 	public static int validacion(String cadena) {
     //Dado un string, evaluar cada caracter de la cadena y juntar una coincidencia de parentesis abierto y cerrado
-    //finalmente contabilizar los parentesis restantes o desemparejados. Utilizando colas.
+    //finalmente contabilizar los parentesis restantes o desemparejados. Utilizando pilas.
 	    Stack <Character> stack = new Stack();
 	    for (int i = 0; i < cadena.length(); i++) {
 	        char c = cadena.charAt(i);
