@@ -1,6 +1,7 @@
 ##Ej4Backspace.py
 
-##Dado una cola doblemente enlazada, elimina tantos caracteres como # se encuentren después
+##Dado una cola doblemente enlazada, elimina tantos caracteres como # se encuentren después.
+##Utilizando colas doblemente enlazadas.
 from collections import deque
 
 salida = deque('')
