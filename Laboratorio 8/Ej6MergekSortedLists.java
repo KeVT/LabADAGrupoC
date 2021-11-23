@@ -6,7 +6,8 @@ import java.util.PriorityQueue;
 public class Ej6MergekSortedLists {
 
     static ListNode merge(ListNode [] heads){
-        //Dadas unas listas ordenadas, se juntan todas las listas y estas se ordenan de forma ascendente
+        //Dadas unas listas ordenadas, se juntan todas las listas y estas se ordenan de forma ascendente.
+        //Utilizando colas de prioridad.
         ListNode resultHead=null;
         ListNode current = null;
         PriorityQueue<ListNode> pq = new PriorityQueue<>(new Comparator<ListNode>() {      
