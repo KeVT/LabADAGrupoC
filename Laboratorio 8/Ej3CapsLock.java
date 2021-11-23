@@ -15,7 +15,7 @@ public class Ej3CapsLock {
     static void cambiarCaso(String m){
         //Dada una cadena,la función almacena en un buffer los caracteres que se encuentren antes de
         //un $. Cuando aparezca un @ todos los caracteres de ese buffer serán cambiado de mayúscula 
-        //a minúscula o visceversa. Finalmente imprime el buffer acumulado
+        //a minúscula o visceversa. Finalmente imprime el buffer acumulado. Utilizando colas.
         Queue<String> O = new LinkedList<String>();
 
         String temp = "";
