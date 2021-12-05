@@ -1,3 +1,5 @@
+//Ej1UniquePathsII.java
+
 public class Ej1UniquePathII {
 
 	public static void  main(String[] args){         
@@ -6,6 +8,8 @@ public class Ej1UniquePathII {
     }
 	    
 	public static int uniquePathsWithObstacles(int[][] obstacleGrid) {         
+	//Dado un arreglo bidimensional, se busca los 0's como ruta para ir desde la esquina superior derecha hacia la esquina inferior izquierda de la tabla conformada por 0's y 1's
+	//Los 1's son considerados obstáculos. La función retorne el número de caminos posibles.
 		if(obstacleGrid == null || obstacleGrid.length == 0 || obstacleGrid[0].length == 0) {	             
 			return 0;		         
 		}   		          
@@ -25,3 +29,6 @@ public class Ej1UniquePathII {
 		return temp[n-1];		     
 	}	
 }
+
+//Resultado del 2° caso de prueba
+1
