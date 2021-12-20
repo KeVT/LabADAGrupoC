@@ -1,5 +1,31 @@
-//Ej3NumberOfLongestIncreasingSubsequence.java
+//Ej3NumberOfLongestIncreasingSubsequence.cpp
 
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) {
+        int n = nums.size();
+        vector<int>v;
+        
+        v.push_back(nums[0]);
+        
+        for(int i=1;i<n;i++)
+        {
+            if(v[v.size()-1]<nums[i])
+            {
+                v.push_back(nums[i]);
+            }
+            else if(v[v.size()-1]>nums[i])
+            {
+                auto it = lower_bound(v.begin(),v.end(),nums[i]);
+                *it = nums[i];
+            }
+        }
+        
+        return v.size();
+    }
+};
+
+/*
 public class Ej3NumberOfLongestIncreasingSubsequence {
 	
 	public static void  main(String[] args){         
@@ -44,3 +70,4 @@ public class Ej3NumberOfLongestIncreasingSubsequence {
 
 //Resultado del caso de prueba
 4
+*/
